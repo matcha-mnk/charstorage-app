@@ -8,6 +8,7 @@ import StoragePage from './pages/StoragePage';
 
 function App() {
   const [message, setMessage] = useState('');
+  const [isDarkMode, setIsDarkMode] = useState(true);// テーマ
 
   useEffect(() => {
     axios.get(process.env.REACT_APP_API_URL + '/')
@@ -19,10 +20,16 @@ function App() {
         });
   }, []);
 
+  // テーマ切り替え
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+
   return (
     <Router>
-      <div className='App'>
-        <Header />
+      <div className={`App ${isDarkMode ? 'dark' : 'light'}`}>
+        <Header handleToggle={toggleTheme} />
         <Routes>
           <Route path='/' element={<TopPage />} />
           <Route path='/storage' element={<StoragePage />} />

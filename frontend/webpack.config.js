@@ -9,10 +9,10 @@ module.exports = {
         filename: 'bundle.js',
     },
     resolve: {
-      extensions: ['.js', '.jsx'],
+      extensions: ['.js', '.jsx', '.ts', '.tsx'],
       fallback: {
         "process": require.resolve("process/browser")
-      }
+      },
     },
     module: {
         rules: [
@@ -24,8 +24,19 @@ module.exports = {
                 },
             },
             {
+                test: /\.tsx?$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                },
+            },
+            {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.svg$/,
+                type: 'asset/resource',
             },
         ],
     },
