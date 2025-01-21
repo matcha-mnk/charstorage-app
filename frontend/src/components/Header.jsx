@@ -7,12 +7,12 @@ const Header = ({handleToggle}) => {
     <header>
       <h1 className="logo">Charstorage</h1>
       <div className="theme-change-ui">
-        <MoonSvg size={24} color="#1f232a" />
+      <SunSvg size={24} color="#f4f4f4"/>
         <div className="theme-change">
-          <input id="theme-change-btn" type="checkbox" onChange={handleToggle} />
+          <input id="theme-change-btn" type="checkbox" onChange={handleToggle}/>
           <label htmlFor="theme-change-btn" />
         </div>
-        <SunSvg size={24} color="#f4f4f4"/>
+        <MoonSvg size={24} color="#1f232a" />
       </div>
     </header>
   );

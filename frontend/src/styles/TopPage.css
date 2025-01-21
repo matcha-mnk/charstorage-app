@@ -1,0 +1,77 @@
+.top-page{
+  padding-top: 8em;
+  display: block;
+  justify-content: center;
+  font-family: "Hina Mincho", serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+
+  & .logo {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    color: #02e3ba;
+  }
+  & h1{
+    margin: 0em;
+  }
+  & .one-line{
+    display: flex;
+  }
+}
+
+.vertical-button, .vertical-button-en {
+  text-align: left;
+  background-color: #f4f4f4;
+  writing-mode: vertical-lr;
+  border: none;
+  writing-mode: vertical-lr;
+  position: relative;
+}
+
+.vertical-button {
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 0;
+  font-family: "Hina Mincho", serif;
+  font-weight: 600;
+  font-size: 35px;
+  letter-spacing: 0.2em;
+  clip-path: inset(0 35% 0 0);
+  line-height: 1em;
+}
+.vertical-button-en {
+  right: 1.2em;
+  margin: 0;
+  font-family: "Zen Kaku Gothic New", serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  border-left: 1.5px solid black;
+  padding-left: 0;
+  padding-top: 0;
+  line-height: 0.6em;
+  clip-path: inset(0 0 0 5%);
+
+  transition: letter-spacing 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+#start-btn-en:hover {
+  letter-spacing: 0.75em;
+  padding-top: 2em;
+}
+#start-btn:hover + #start-btn-en {
+  letter-spacing: 0.75em;
+  padding-top: 2em;
+}
+#manual-btn-en:hover {
+  letter-spacing: 0.45em;
+  padding-top: 2em;
+}
+#manual-btn:hover + #manual-btn-en {
+  letter-spacing: 0.45em;
+  padding-top: 2em;
+}

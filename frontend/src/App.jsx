@@ -8,7 +8,7 @@ import StoragePage from './pages/StoragePage';
 
 function App() {
   const [message, setMessage] = useState('');
-  const [isDarkMode, setIsDarkMode] = useState(true);// テーマ
+  const [isDarkMode, setIsDarkMode] = useState(false);// テーマ
 
   useEffect(() => {
     axios.get(process.env.REACT_APP_API_URL + '/')

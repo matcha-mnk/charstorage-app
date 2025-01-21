@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Klee+One&family=Noto+Sans+JP:wght@900&family&family=Zen+Kaku+Gothic+New&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Noto+Sans+JP:wght@900&family&family=Zen+Kaku+Gothic+New&display=swap');
 
 body {
   font-family: "Noto Sans JP", sans-serif;
@@ -19,7 +19,7 @@ html, body{
 
 .dark {
   background-color: #1f232a;
-  color: white;
+  color: #dfdfdf;
 }
 .light {
   background-color: #f4f4f4;
