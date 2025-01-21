@@ -1,0 +1,12 @@
+.storage-page {
+  padding-top: 4em;
+  padding-left: 2em;
+  display: block;
+  font-family: "Hina Mincho", serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+
+  & .page-title-storage {
+    font-size: 25px;
+  }
+}
