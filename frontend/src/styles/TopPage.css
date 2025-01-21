@@ -24,8 +24,10 @@
 }
 
 .vertical-button, .vertical-button-en {
+  all: unset;
+  cursor: pointer;
   text-align: left;
-  background-color: #f4f4f4;
+  background-color: none;
   writing-mode: vertical-lr;
   border: none;
   writing-mode: vertical-lr;
@@ -51,7 +53,7 @@
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.1em;
-  border-left: 1.5px solid black;
+  border-left: 1.5px solid;
   padding-left: 0;
   padding-top: 0;
   line-height: 0.6em;

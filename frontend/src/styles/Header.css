@@ -38,6 +38,7 @@ header {
 		}
 
 		& label {
+			cursor: pointer;
 			background-color: #7d8ba0;
 			border-radius: 2em;
 			border: 0.1px solid #11236f;
@@ -62,5 +63,10 @@ header {
 				z-index: 2;
 			}
 		}
+	}
+
+	& .top-button {
+		all: unset;
+		cursor: pointer;
 	}
 }

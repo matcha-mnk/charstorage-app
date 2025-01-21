@@ -20,8 +20,10 @@ html, body{
 .dark {
   background-color: #1f232a;
   color: #dfdfdf;
+  border-color: #dfdfdf;
 }
 .light {
   background-color: #f4f4f4;
   color: #3e3e4a;
+  border-color: #3e3e4a;
 }
