@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react';;
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './App.css';
+import Header from './components/Header';
+import TopPage from './pages/TopPage';
+import StoragePage from './pages/StoragePage';
 
 
 function App() {
@@ -17,10 +20,15 @@ function App() {
   }, []);
 
   return (
-    <div className='App'>
-        <h1>Hello, React without CRA or Vite!</h1>
-        <p>{message}</p>
-    </div>
+    <Router>
+      <div className='App'>
+        <Header />
+        <Routes>
+          <Route path='/' element={<TopPage />} />
+          <Route path='/storage' element={<StoragePage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
